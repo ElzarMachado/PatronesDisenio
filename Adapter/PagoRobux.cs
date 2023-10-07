@@ -13,6 +13,6 @@ namespace Adapter
             Console.WriteLine("Cobrando con Robux");
         }
     }
-    {
-    }
+    
 }
+
