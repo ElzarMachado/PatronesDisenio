@@ -1,5 +1,4 @@
 ﻿using PuntoDeVentaSOLID;
-using System;
 
 //Adapter
 IPagoPVS pagoPVS = new PagoMonedaAdapter();
@@ -19,6 +18,6 @@ List<string> productos = new List<string>()
     "Apple Watch, ", "Iphone ", "Ipad"
 };
 
-CargoExtraDecorator cargoExtraDecorator = new CargoExtraDecorator(new VentaExtra(productos), producto.Precio + 80);
+CargoExtraDecorator cargoExtraDecorator = new CargoExtraDecorator(new VentaExtra(productos), producto.Precio + 69);
 Console.WriteLine($"Si se agrega {string.Join("", productos)} el total sera de:{cargoExtraDecorator}");
 Console.WriteLine($"Total {producto.Nombre}: {producto.Descuento}");
